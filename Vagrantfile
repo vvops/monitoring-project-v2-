@@ -54,7 +54,7 @@ Vagrant.configure("2") do |mashin|
                 s.inline = <<-SHELL
                 
                 echo ">>>>>>>>>>>>> create volume"
-                #{go} git -a "repo=https://github.com/vovas1990/test77.git dest=/tmp/git clone=true update=true"
+                #{go} git -a "repo=https://github.com/vvops/test77.git dest=/tmp/git clone=true update=true"
                 #{go} docker_volume -a "name=prometheus state=present"
                 #{go} apt -a "update-cache=true"
                 
